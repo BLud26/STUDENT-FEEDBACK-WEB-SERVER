@@ -1,0 +1,64 @@
+/* Shared styles for every page. layout.hbs links this file. */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #1d3557;
+  margin: 0;
+  padding: 40px 16px;
+}
+
+/* Card that holds each page's content */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #f1faee;
+  padding: 24px 32px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #1d3557;
+}
+
+h2 {
+  color: #457b9d;
+}
+
+/* Two columns: label on the left, input on the right */
+.form-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+input[type="number"] {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #a8dadc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d3557;
+}
+
+a {
+  color: #457b9d;
+}
+
+.error-message {
+  color: #e63946;
+  font-weight: bold;
+}

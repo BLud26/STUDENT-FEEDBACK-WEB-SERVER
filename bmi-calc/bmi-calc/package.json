@@ -1,0 +1,17 @@
+{
+  "name": "bmi-calculator",
+  "version": "1.0.0",
+  "description": "Body Mass Index calculator built with Express and Handlebars",
+  "license": "ISC",
+  "author": "Ben",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "hbs": "^4.3.1"
+  }
+}

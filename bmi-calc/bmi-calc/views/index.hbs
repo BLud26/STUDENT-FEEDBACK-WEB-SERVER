@@ -1,0 +1,20 @@
+<!-- Home page: form for height and weight.
+     Submitting sends a GET request to /calculate with the
+     values in the query string, e.g. /calculate?height=1.7&weight=75 -->
+<h2>Enter your data</h2>
+
+<form action="/calculate" method="GET">
+    <div class="form-row">
+        <label for="height">Height in meters:</label>
+        <!-- step="0.01" allows form to take decimals -->
+        <input type="number" id="height" name="height" step="0.01">
+    </div>
+
+    <div class="form-row">
+        <label for="weight">Weight in kilograms:</label>
+        <!-- step="0.01" allows decimal weights like 72.5 -->
+        <input type="number" id="weight" name="weight" step="0.01">
+    </div>
+
+    <button type="submit">Calculate</button>
+</form>
